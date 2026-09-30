@@ -1,250 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Doraemon Magical Movie World</title>
+    <title>Magical World</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.css">
 </head>
 
 <body>
 
-    <!-- Floating decorations -->
-    <div class="magic-star star1">✦</div>
-    <div class="magic-star star2">✧</div>
-    <div class="magic-star star3">✦</div>
-    <div class="magic-star star4">♡</div>
-    <div class="magic-star star5">✧</div>
+    <div class="magic-container">
 
+        <div class="stars">✦</div>
+        <div class="stars star2">✧</div>
+        <div class="stars star3">✦</div>
 
-    <!-- Header -->
+        <div class="welcome-card">
 
-    <header>
+            <div class="emoji">🌙✨</div>
 
-        <div class="header-icon">🔵✨</div>
+            <h1>Hello! 💙</h1>
 
-        <h1>Hello! Welcome to Doraemon's Magical World 💙</h1>
+            <h2>Welcome to Our<br>
+                <span>Magical Disney World</span> 🏰
+            </h2>
 
-        <p>
-            ✨ Let's travel back to our beautiful childhood memories ✨
-        </p>
+            <p>
+                A little magic, a little happiness<br>
+                and lots of fun are waiting for you! ✨
+            </p>
 
-        <div class="cloud cloud1">☁️</div>
-        <div class="cloud cloud2">☁️</div>
+            <input type="text" id="username" placeholder="Enter your name 💕">
 
-    </header>
+            <button onclick="enterWorld()">
+                Enter the Magical World ✨
+            </button>
 
+            <p class="small-text">
+                Your magical adventure starts here 🌈
+            </p>
 
-    <!-- Introduction -->
-
-    <div class="intro">
-
-        <h2>🎬 Top 9 Doraemon Movies 🎬</h2>
-
-        <p>
-            Click on a poster to see it bigger
-            <br>
-            or click the movie name to explore more! 💕
-        </p>
+        </div>
 
     </div>
 
-
-    <!-- Gallery -->
-
-    <section class="gallery">
-
-
-        <!-- Movie 1 -->
-
-        <div class="photo">
-
-            <div class="number">01</div>
-
-            <img src="https://m.media-amazon.com/images/S/pv-target-images/4c03965c0a85fbf0cbfb122f76f8160028fca9cdce314caf3d1b946958c3a0c8.jpg" 
-            alt="Photo 1" 
-            onclick="openImage(this)">
-
-            <a href="https://en.wikipedia.org/wiki/Doraemon:_Nobita_and_the_Steel_Troops" 
-            target="_blank" 
-            class="photo-link">
-                Doremon: Nobita and the Steel Troops
-            </a>
-
-        </div>
-
-
-        <!-- Movie 2 -->
-
-        <div class="photo">
-
-            <div class="number">02</div>
-
-            <img src="https://tse1.mm.bing.net/th/id/OIP.6xZ4pKnCWckvrme_yaPMTwAAAA?r=0&pid=ImgDet&w=400&h=598&rs=1&o=7&rm=3" 
-            alt="Photo 2" 
-            onclick="openImage(this)">
-
-            <a href="https://en.wikipedia.org/wiki/Doraemon:_Nobita_and_the_Animal_Planet" 
-            target="_blank" 
-            class="photo-link">
-                Doremon: Nobita and the Animal Planet
-            </a>
-
-        </div>
-
-
-        <!-- Movie 3 -->
-
-        <div class="photo">
-
-            <div class="number">03</div>
-
-            <img src="https://static.zerochan.net/Doraemon:.Nobita.no.Dorabian.Nights.1024.51100.webp" 
-            alt="Photo 3" 
-            onclick="openImage(this)">
-
-            <a href="https://en.wikipedia.org/wiki/Doraemon:_Nobita%27s_Dorabian_Nights" 
-            target="_blank" 
-            class="photo-link">
-                Doremon: Nobita's Dorabian Nights
-            </a>
-
-        </div>
-
-
-        <!-- Movie 4 -->
-
-        <div class="photo">
-
-            <div class="number">04</div>
-
-            <img src="https://images.plex.tv/photo?size=medium-360&scale=2&url=https:%2F%2Fmetadata-static.plex.tv%2F0%2Fgracenote%2F0df26cfb21f35b631c000a18fe113a4c.jpg" 
-            alt="Photo 4" 
-            onclick="openImage(this)">
-
-            <a href="https://en.wikipedia.org/wiki/Doraemon:_Nobita_and_the_Galaxy_Super-express" 
-            target="_blank" 
-            class="photo-link">
-                Doraemon: Nobita and the Galaxy Super-express
-            </a>
-
-        </div>
-
-
-        <!-- Movie 5 -->
-
-        <div class="photo">
-
-            <div class="number">05</div>
-
-            <img src="https://thumb.wikimedia.org/wikipedia/en/thumb/d/de/Nobita_and_the_Legend_of_the_Sun_King.jpg/250px-Nobita_and_the_Legend_of_the_Sun_King.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" 
-            alt="Photo 5" 
-            onclick="openImage(this)">
-
-            <a href="https://en.wikipedia.org/wiki/Doraemon:_Nobita_and_the_Legend_of_the_Sun_King" 
-            target="_blank" 
-            class="photo-link">
-                Doraemon: Nobita and the Legend of the Sun King
-            </a>
-
-        </div>
-
-
-        <!-- Movie 6 -->
-
-        <div class="photo">
-
-            <div class="number">06</div>
-
-            <img src="https://whats-after-the-movie-ti152.sevalla.storage/movies/Doraemon:-Nobita%E2%80%99s%C2%A0Dinosaur-qkCVmgIj8HgPWQ.jpg" 
-            alt="Photo 6" 
-            onclick="openImage(this)">
-
-            <a href="https://en.wikipedia.org/wiki/Doraemon:_Nobita_and_the_Dinosaur" 
-            target="_blank" 
-            class="photo-link">
-                Doremon: Nobita and the Dinosaur
-            </a>
-
-        </div>
-
-
-        <!-- Movie 7 -->
-
-        <div class="photo">
-
-            <div class="number">07</div>
-
-            <img src="https://m.media-amazon.com/images/M/MV5BNDE5ZTAzZjUtYWViMy00MDQ3LThiOTUtYjhhODAwZjI5ZWZiXkEyXkFqcGc@._V1_.jpg" 
-            alt="Photo 7" 
-            onclick="openImage(this)">
-
-            <a href="https://en.wikipedia.org/wiki/Doraemon:_Nobita%27s_Secret_Gadget_Museum" 
-            target="_blank" 
-            class="photo-link">
-                Doraemon: Nobita's Secret Gadget Museum
-            </a>
-
-        </div>
-
-
-        <!-- Movie 8 -->
-
-        <div class="photo">
-
-            <div class="number">08</div>
-
-            <img src="https://image.tmdb.org/t/p/original/xpNn5Md0tOP4eAkstKMAfaeamdF.jpg" 
-            alt="Photo 8" 
-            onclick="openImage(this)">
-
-            <a href="https://en.wikipedia.org/wiki/Doraemon:_Nobita_and_the_Green_Giant_Legend" 
-            target="_blank" 
-            class="photo-link">
-                Doraemon: Nobita and the Green Giant Legend
-            </a>
-
-        </div>
-
-
-        <!-- Movie 9 -->
-
-        <div class="photo">
-
-            <div class="number">09</div>
-
-            <img src="https://media.netflixreleases.com/images/9c6e40de8c69e1008d845252e5cfef75/doraemon-the-movie-nobita-in-the-new-haunts-of-evil-peko-and-the-five-explorers-2014-poster.jpg" 
-            alt="Photo 9" 
-            onclick="openImage(this)">
-
-            <a href="https://en.wikipedia.org/wiki/Doraemon:_Nobita_in_the_New_Haunts_of_Evil_~_Peko_and_the_Five_Explorers_~" 
-            target="_blank" 
-            class="photo-link">
-                Doremon: Nobita the Explorer Bow! Bow!
-            </a>
-
-        </div>
-
-
-    </section>
-
-
-    <!-- Full Screen Image -->
-
-    <div id="imageModal" class="modal" onclick="closeImage()">
-
-        <span class="close">&times;</span>
-
-        <img id="modalImage">
-
-    </div>
-
-
-    <script src="script.js"></script>
+    <script>
+        function enterWorld() {
+
+            let name = document.getElementById("username").value;
+
+            if (name.trim() === "") {
+                alert("Please enter your name 💕");
+                return;
+            }
+
+            // Save the name
+            localStorage.setItem("username", name);
+
+            // Open another HTML page
+            window.location.href = "index.html";
+        }
+    </script>
 
 </body>
-
 </html>
