@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Magical World</title>
+
+    <link rel="stylesheet" href="Welcomepage.css">
+</head>
+
+<body>
+
+    <div class="magic-container">
+
+        <div class="stars">✦</div>
+        <div class="stars star2">✧</div>
+        <div class="stars star3">✦</div>
+
+        <div class="welcome-card">
+
+            <div class="emoji">🌙✨</div>
+
+            <h1>Hello! 💙</h1>
+
+            <h2>Welcome to Our<br>
+                <span>Magical Disney World</span> 🏰
+            </h2>
+
+            <p>
+                A little magic, a little happiness<br>
+                and lots of fun are waiting for you! ✨
+            </p>
+
+            <input type="text" id="username" placeholder="Enter your name 💕">
+
+            <button onclick="enterWorld()">
+                Enter the Magical World ✨
+            </button>
+
+            <p class="small-text">
+                Your magical adventure starts here 🌈
+            </p>
+
+        </div>
+
+    </div>
+
+    <script>
+        function enterWorld() {
+
+            let name = document.getElementById("username").value;
+
+            if (name.trim() === "") {
+                alert("Please enter your name 💕");
+                return;
+            }
+
+            // Save the name
+            localStorage.setItem("username", name);
+
+            // Open another HTML page
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
